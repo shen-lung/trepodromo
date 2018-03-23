@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block clases %}
+<div class="data">
+    <h1>Clases</h1>
+    <p class="description">
+        En nuestra palestra ofrecemos clases guiadas tanto para niños como para adultos, con o sin experiencia previa. En ellas se “aprende a escalar” a partir del desarrollo de técnicas propias del deporte y el entrenamiento físico integral.
+    </p>
+    <div class="datagrid table_green">
+        <table>
+            <thead>
+                <tr><th>Días</th><th>Mañana</th><th>Tarde</th></tr>
+            </thead>
+            <tbody>
+                <tr class="field"><td>Adultos:</td></tr>
+                <tr class="alt"><td>Lunes</td><td>-</td><td>-</td></tr>
+                <tr><td>Martes</td><td>-</td><td>18.30 a 19.30 horas</td></tr>
+                <tr class="alt"><td>Miércoles</td><td>-</td><td>-</td></tr>
+                <tr><td>Jueves</td><td>-</td><td>18.30 a 19.30 horas</td></tr>
+                <tr class="alt"><td>Viernes</td><td>-</td><td>-</td></tr>
+                <tr class="field"><td>Niños:</td></tr>
+                <tr class="alt"><td>Lunes</td><td>-</td><td>-</td></tr>
+                <tr><td>Martes</td><td>-</td><td>17.30 a 18.30 horas</td></tr>
+                <tr class="alt"><td>Miércoles</td><td>-</td><td>-</td></tr>
+                <tr><td>Jueves</td><td>-</td><td>17.30 a 18.30 horas</td></tr>
+                <tr class="alt"><td>Viernes</td><td>-</td><td>-</td></tr>
+        </table>
+    </div>
+    <h1>Precios</h1>
+    <div class="datagrid table_violeta">
+        <table>
+            <thead>
+                <tr><th>Asistencia:</th><th>Precios:</th</tr>
+            </thead>
+            <tbody>
+                <tr><td>Clase</td><td>$75</td></tr>
+                <tr class="alt"><td>Clases Adultos + Muro libre</td><td>$450</td></tr>
+                <tr><td>Clases Niños + Muro libre</td><td>$350</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="block">
+        {% for url in images_urls %}
+            <img class="img" src={{ url }} alt="Clases">
+        {% endfor %}
+    </div>
+</div>
+{% endblock clases %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block cursos %}
+<div class="data">
+    <h1>Cursos</h1>
+    <div class="description">
+        <p><strong>Iniciación a la Escalada Deportiva:</strong></p>
+        <p>
+            <strong><small>Un módulo teórico:</small></strong> en donde se entrega un cuadernillo para estudiar las características de este estilo de escalada, materiales, dispositivos de seguridad y factores de riesgo.
+        </p>
+        <p>
+            <strong><small>Un módulo práctico:</small></strong> en donde se realizan un par de salidas a la montaña (Potrerillos, El salto, Agua de las Avispas) para aplicar todo el conocimiento teórico adquirido y escalar en la roca de manera guiada y segura. Se enseña a escalar con cuerda paredes que no superan los 25 metros.
+        </p>
+    </div>
+    <div class="block">
+        {% for url in deportiva_images_urls %}
+            <img class="img" src={{ url }} alt="Deportiva">
+        {% endfor %}
+    </div>
+    <div class="description">
+        <p><strong>Curso de Escalada de Multilargos:</strong></p>
+        <p>
+            Este curso cuenta también con una parte teórica y una práctica en la montaña (Cajón de los Arenales). Para realizar el curso de multilargos se necesita experiencia previa en la escalada deportiva. Se escalan paredes de más de 25 metros.
+        </p>
+    </div>
+    <div class="block">
+        {% for url in multilargo_images_urls %}
+            <img class="img" src={{ url }} alt="Multilargos">
+        {% endfor %}
+    </div>
+</div>
+{% endblock cursos %}

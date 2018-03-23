@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block escalada %}
+<div class="data">
+    <h1>Escalada</h1>
+    <p class="description">
+        El estilo de escalada que se practica en nuestra palestra es “boulder”. Este estilo se caracteriza por escalar piedras grandes pero no lo suficientemente altas como para necesitar cuerda. En nuestro muro se escala en forma libre (sin cuerda) sobre colchones y el alto de la pared es inferior a los cuatro metros.
+    </p>
+    <div class="datagrid table_blue">
+        <table>
+            <thead>
+                <tr><th>Días</th><th>Mañana</th><th>Tarde</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Lunes</td><td>-</td><td>18 a 22 horas</td></tr>
+                <tr class="alt"><td>Martes</td><td>10.30 a 13 horas</td><td>18 a 22 horas</td></tr>
+                <tr><td>Miércoles</td><td>-</td><td>18 a 22 horas</td></tr>
+                <tr class="alt"><td>Jueves</td><td>10.30 a 13 horas</td><td>18 a 22 horas</td></tr>
+                <tr><td>Viernes</td><td>-</td><td>18 a 22 horas</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <h1>Precios</h1>
+    <div class="datagrid table_violeta">
+        <table>
+            <thead>
+                <tr><th>Asistencia:</th><th>Precios:</th</tr>
+            </thead>
+            <tbody>
+                <tr><td>Muro libre</td><td>$350</td></tr>
+                <tr class="alt"><td>Medio mes</td><td>$220</td></tr>
+                <tr><td>Día</td><td>$75</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="block">
+        {% for url in images_urls %}
+            <img class="img" src={{ url }} alt="Escalada">
+        {% endfor %}
+    </div>
+</div>
+{% endblock escalada %}
