@@ -6,7 +6,7 @@ import '../bootstrap4/css/bootstrap.css';
 export default class MobileMenu extends Component {
     render() {
         return (
-            <div>
+            <div className="mobile-menu d-md-none">
                 <a className="img-container" href="/">
                     <img className="menu-img" src={require("../css/img/menu/1.jpg")}/>
                     <div className="img-link-text escalada">Escalada</div>

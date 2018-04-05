@@ -9,7 +9,7 @@ export default class BasePage extends Component {
                 <section  className="container-fluid d-flex justify-content-center cover">
                     <div className="content-center"></div>
                 </section>
-                {/* <nav className="navbar navbar-expand-md navbar-expand-lg">
+                <nav className="navbar navbar-expand-md navbar-expand-lg d-none d-md-block">
                     <ul className="navbar-nav mr-auto center">
                       <li className="nav-item">
                         <a className="menu-link home" href="/"></a>
@@ -39,7 +39,7 @@ export default class BasePage extends Component {
                         <a className="menu-link fb" href="https://www.facebook.com/trepodromo.mdz/"></a>
                       </li>
                     </ul>
-                </nav> */}
+                </nav>
             </div>
         )
     }

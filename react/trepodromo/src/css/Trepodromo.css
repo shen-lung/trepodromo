@@ -4,6 +4,10 @@
     --text-color: #313131;
     --white-color: #fff;
 }
+html {
+    position: relative;
+    min-height: 100%;
+}
 body {
     width: 100%;
     min-width: 1200px;
@@ -26,9 +30,10 @@ nav {
     background-color: var(--section-color);
 }
 .header {
+    position: absolute;
     overflow: hidden;
     position: fixed;
-    z-index:1000;
+    z-index:2000;
     top: 0;
     height: auto;
     width: 100%;
@@ -46,14 +51,19 @@ nav {
     left: 50%;
 }
 .footer {
+    position: absolute;
     font-size: 15px;
     height: 40px;
     width: 100%;
     position: fixed;
-    z-index:1000;
+    z-index:2000;
     bottom: 0;
+    left: 0;
     background-color: var(--section-color);
     text-align: center;
+}
+.footer-mobile {
+    height: 60px;
 }
 .footer-text {
     font-size: 15px;
@@ -498,6 +508,9 @@ input[type=submit]:focus {
 .email_failed {
     text-align: center;
     color: #FF002AF0;
+}
+.mobile-menu {
+    margin-top: 200px;
 }
 .menu-img{
     margin: 0;
