@@ -2,7 +2,7 @@
 {% load staticfiles %}
 {% block fotos %}
 <div class="data">
-    <h1>Fotos</h1>
+    <h1 class="title">Fotos</h1>
     <ul class="gallery">
         {% for url in images_urls %}
             <li><a href="#"><img src={{ url }} alt="Fotos"></a></li>
