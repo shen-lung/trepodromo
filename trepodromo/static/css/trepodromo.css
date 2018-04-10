@@ -627,6 +627,22 @@ input[type=submit]:focus {
     right: 0;
     bottom: 86px;
 }
+.modal-menu-link {
+    display: block;
+    color: #444;
+    font-family: 'Chewy', serif;
+    font-size: 60px;
+    margin-top: 16px;
+    margin-left: 28px;
+    text-decoration: none;
+}
+.modal-menu-link:active {
+    font-size: 80px;
+    text-decoration: none;
+}
+.modal-menu-link:focus {
+    text-decoration: none;
+}
 @media (min-width: 300px) and (max-width: 767.98px) {
     .content {
         width: 100%;
@@ -663,8 +679,4 @@ input[type=submit]:focus {
         padding: 8px;
         background: url('img/trepodromo_mobile.png')  no-repeat center;;
     }
-    .modal-menu-dialog {
-    position: relative;
-    width: auto;
-    pointer-events: none;
 }
