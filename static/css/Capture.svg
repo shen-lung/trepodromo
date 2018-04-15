@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 360 176">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #707070;
+        fill: url(#pattern);
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 932 453">
+      <image width="932" height="453" xlink:href="Capture-image.png"/>
+    </pattern>
+  </defs>
+  <g id="Capture" class="cls-1">
+    <rect class="cls-2" width="360" height="176"/>
+    <rect class="cls-3" x="0.5" y="0.5" width="359" height="175"/>
+  </g>
+</svg>

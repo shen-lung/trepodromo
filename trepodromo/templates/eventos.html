@@ -5,10 +5,21 @@
     <h1 class="title">Eventos</h1>
     <p class="description">Frente al entusiasmo por escalar y con el fin de estrechar lazos entre escaladores y fomentar el deporte, realizamos diferentes eventos a lo largo del año abiertos a todo público. Dichos eventos cuentan con diferentes propuestas de boulders, actividades recreativas, música y sorteos.
     </p>
-    <div class="block">
-        {% for url in images_urls %}
-            <img class="img" src={{ url }} alt="Eventos">
-        {% endfor %}
+    <div class="block d-none d-md-block">
+        <img class="img" src="{% static "img/eventos/eventos_1.jpg" %}" alt="Escalada">
+        <img class="img" src="{% static "img/eventos/eventos_2.jpg" %}" alt="Escalada">
+        <img class="img" src="{% static "img/eventos/eventos_3.jpg" %}" alt="Escalada">
+        <img class="img" src="{% static "img/eventos/eventos_4.jpg" %}" alt="Escalada">
+        <img class="img" src="{% static "img/eventos/eventos_5.jpg" %}" alt="Escalada">
+        <img class="img" src="{% static "img/eventos/eventos_6.jpg" %}" alt="Escalada">
+    </div>
+    <div class="image-mobile-content d-flex flex-column d-md-none">
+        <div class="image-mobile"><img class="img" src="{% static "img/eventos/eventos_1_min.jpg" %}" alt="Escalada"></div>
+        <div class="image-mobile"><img class="img" src="{% static "img/eventos/eventos_2_min.jpg" %}" alt="Escalada"></div>
+        <div class="image-mobile"><img class="img" src="{% static "img/eventos/eventos_3_min.jpg" %}" alt="Escalada"></div>
+        <div class="image-mobile"><img class="img" src="{% static "img/eventos/eventos_4_min.jpg" %}" alt="Escalada"></div>
+        <div class="image-mobile"><img class="img" src="{% static "img/eventos/eventos_5_min.jpg" %}" alt="Escalada"></div>
+        <div class="image-mobile"><img class="img" src="{% static "img/eventos/eventos_6_min.jpg" %}" alt="Escalada"></div>
     </div>
 </div>
 {% endblock eventos %}

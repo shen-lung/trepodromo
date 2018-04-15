@@ -33,10 +33,15 @@
             </tbody>
         </table>
     </div>
-    <div class="block">
-        {% for url in images_urls %}
-            <img class="img" src={{ url }} alt="Escalada">
-        {% endfor %}
+    <div class="block d-none d-md-block">
+        <img class="img" src="{% static "img/escalada/escalada_1.jpg" %}" alt="Escalada">
+        <img class="img" src="{% static "img/escalada/escalada_2.jpg" %}" alt="Escalada">
+        <img class="img" src="{% static "img/escalada/escalada_3.jpg" %}" alt="Escalada">
+    </div>
+    <div class="image-mobile-content d-flex flex-column d-md-none">
+        <div class="image-mobile"><img class="img" src="{% static "img/escalada/escalada_1_min.jpg" %}" alt="Escalada"></div>
+        <div class="image-mobile"><img class="img" src="{% static "img/escalada/escalada_2_min.jpg" %}" alt="Escalada"></div>
+        <div class="image-mobile"><img class="img" src="{% static "img/escalada/escalada_3_min.jpg" %}" alt="Escalada"></div>
     </div>
 </div>
 {% endblock escalada %}
