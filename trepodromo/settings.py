@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'trepodromo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'trepodromo',
-        'USER': 'trepodromo_user',
-        'PASSWORD': 'trepodromo',
+        'USER': 'trepodromo',
+        'PASSWORD': 'kpSuLMHSr2hd',
         'HOST': 'localhost',
         'PORT': '',
     }
