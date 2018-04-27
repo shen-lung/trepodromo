@@ -672,7 +672,7 @@ input[type=submit]:focus {
 .mobile-menu-content {
     padding-bottom: 30px;
 }
-@media (min-width: 300px) and (max-width: 767.98px) {
+@media (min-width: 100px) and (max-width: 767.98px) {
     .home-content {
         width: 100%;
         padding-left: 0;
