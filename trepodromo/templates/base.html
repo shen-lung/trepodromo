@@ -15,23 +15,39 @@
 </head>
 <body>
     <div class="header">
-        <a href="/">
-            <section  class="container-fluid d-flex justify-content-center cover">
-                <div class="content-center"></div>
-            </section>
-        </a>
-        <nav class="d-none d-md-block">
-            <ul class="center">
-                <li><a class="home" href="/"></a></li>
-                <li><a class="escalada" href="/escalada">Escalada</a></li>
-                <li><a class="clases" href="/clases">Clases</a></li>
-                <li><a class="cursos" href="/cursos">Cursos</a></li>
-                <li><a class="eventos" href="/eventos">Eventos</a></li>
-                <li><a class="fotos" href="/fotos">Fotos</a></li>
-                <li><a class="quienes_somos" href="/quienes_somos">Quienes Somos</a></li>
-                <li><a class="contacto" href="/contacto">Contacto</a></li>
-                <li><a class="fb" href="https://www.facebook.com/trepodromo.mdz/" target="_blank"></a></li>
-            </ul>
+        <a href="/"><section  class="container-fluid pr-0 pl-0 cover"></section></a>
+        <nav class="navbar navbar-expand-md menu d-none d-md-block">
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item menu-link">
+                        <a class="nav-link home" href="/"></a>
+                    </li>
+                    <li class="nav-item menu-link">
+                        <a class="nav-link menu-link-color escalada" href="/escalada">Escalada</a>
+                    </li>
+                    <li class="nav-item menu-link">
+                        <a class="nav-link menu-link-color clases" href="/clases">Clases</a>
+                    </li>
+                    <li class="nav-item menu-link">
+                        <a class="nav-link menu-link-color cursos" href="/cursos">Cursos</a>
+                    </li>
+                    <li class="nav-item menu-link">
+                        <a class="nav-link menu-link-color eventos" href="/eventos">Eventos</a>
+                    </li>
+                    <li class="nav-item menu-link">
+                        <a class="nav-link menu-link-color fotos" href="/fotos">Fotos</a>
+                    </li>
+                    <li class="nav-item menu-link">
+                        <a class="nav-link menu-link-color quienes_somos" href="/quienes_somos">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item menu-link">
+                        <a class="nav-link menu-link-color contacto" href="/contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item menu-link">
+                        <a class="nav-link fb" href="https://www.facebook.com/trepodromo.mdz/" target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
     <div class="home-content">
@@ -49,31 +65,28 @@
     </div>
     <div class="footer d-none d-md-block">
         <p class="footer-text">© 2017 Trepodromo. Todos los derechos reservados.
-            <a href="http://www.facebook.com/vadimshenlung" target="_blank">@vadim</a></p>
     </div>
-    <div class="footer footer-mobile d-md-none">
+    <section class="container-fluid footer-mobile d-md-none padding-lr-cero">
         <span><a class="fb-mobile" href="https://www.facebook.com/trepodromo.mdz/" target="_blank"></a></span>
-        <button type="button" class="menu-mobile" data-toggle="modal" data-target="#exampleModalCenter">
-        </button>
-
-    </div>
+        <button type="button" class="menu-mobile-icon" data-toggle="modal" data-target="#exampleModalCenter">
+    </section>
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-menu">
                 <div class="modal-body">
                     <a class="modal-menu-link escalada" href="/escalada">Escalada</a>
-                    <hr class="hr">
+                    <hr class="hr-modal-menu">
                     <a class="modal-menu-link clases" href="/clases">Clases</a>
-                    <hr class="hr">
+                    <hr class="hr-modal-menu">
                     <a class="modal-menu-link cursos" href="/cursos">Cursos</a>
-                    <hr class="hr">
+                    <hr class="hr-modal-menu">
                     <a class="modal-menu-link eventos" href="/eventos">Eventos</a>
-                    <hr class="hr">
+                    <hr class="hr-modal-menu">
                     <a class="modal-menu-link fotos" href="/fotos">Fotos</a>
-                    <hr class="hr">
+                    <hr class="hr-modal-menu">
                     <a class="modal-menu-link quienes_somos" href="/quienes_somos">Quienes Somos</a>
-                    <hr class="hr">
+                    <hr class="hr-modal-menu">
                     <a class="modal-menu-link contacto" href="/contacto">Contacto</a>
                 </div>
             </div>
