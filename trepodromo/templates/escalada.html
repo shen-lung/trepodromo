@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block escalada %}
-<div class="data">
-    <h1 class="title">Escalada</h1>
-    <p class="description">
+<div class="container info-content">
+    <h1 class="text-center title">Escalada</h1>
+    <p class="mx-auto">
         El estilo de escalada que se practica en nuestra palestra es “boulder”. Este estilo se caracteriza por escalar piedras grandes pero no lo suficientemente altas como para necesitar cuerda. En nuestro muro se escala en forma libre (sin cuerda) sobre colchones y el alto de la pared es inferior a los cuatro metros.
     </p>
-    <div class="datagrid table_blue">
+    <div class="mx-auto datagrid table_blue">
         <table>
             <thead>
                 <tr><th>Días</th><th>Mañana</th><th>Tarde</th></tr>
@@ -20,8 +20,8 @@
             </tbody>
         </table>
     </div>
-    <h1 class="title precio_title">Precios</h1>
-    <div class="datagrid table_violeta">
+    <h1 class="text-center title">Precios</h1>
+    <div class="mx-auto datagrid table_violeta">
         <table>
             <thead>
                 <tr><th>Asistencia:</th><th>Precios:</th</tr>
@@ -33,15 +33,21 @@
             </tbody>
         </table>
     </div>
-    <div class="block d-none d-md-block">
-        <img class="img" src="{% static "img/escalada/escalada_1.jpg" %}" alt="Escalada">
-        <img class="img" src="{% static "img/escalada/escalada_2.jpg" %}" alt="Escalada">
-        <img class="img" src="{% static "img/escalada/escalada_3.jpg" %}" alt="Escalada">
+    <div class="row image-section">
+        <div class="col">
+            <img class="img-fluid rounded float-left img" src="{% static "img/escalada/escalada_1.jpg" %}" data-target="#myModal" data-toggle="modal">
+        </div>
+        <div class="col">
+            <img class="img-fluid rounded mx-auto d-block img" src="{% static "img/escalada/escalada_2.jpg" %}" data-target="#myModal" data-toggle="modal">
+        </div>
+        <div class="col">
+            <img class="img-fluid rounded float-right img" src="{% static "img/escalada/escalada_3.jpg" %}" data-target="#myModal" data-toggle="modal">
+        </div>
     </div>
-    <div class="image-mobile-content d-flex flex-column d-md-none">
+    <!-- <div class="image-mobile-content d-flex flex-column d-md-none">
         <div class="image-mobile"><img class="img" src="{% static "img/escalada/escalada_1_min.jpg" %}" alt="Escalada"></div>
         <div class="image-mobile"><img class="img" src="{% static "img/escalada/escalada_2_min.jpg" %}" alt="Escalada"></div>
         <div class="image-mobile"><img class="img" src="{% static "img/escalada/escalada_3_min.jpg" %}" alt="Escalada"></div>
-    </div>
+    </div> -->
 </div>
 {% endblock escalada %}

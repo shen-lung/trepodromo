@@ -1,5 +1,4 @@
 astroid==1.5.3
-cloudinary==1.8.0
 colorama==0.3.9
 Django==1.8
 gunicorn==19.7.1

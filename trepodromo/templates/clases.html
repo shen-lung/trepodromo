@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block clases %}
-<div class="data">
-    <h1 class="title">Clases</h1>
-    <p class="description">
+<div class="container info-content">
+    <h1 class="text-center title">Clases</h1>
+    <p class="mx-auto">
         En nuestra palestra ofrecemos clases guiadas tanto para niños como para adultos, con o sin experiencia previa. En ellas se “aprende a escalar” a partir del desarrollo de técnicas propias del deporte y el entrenamiento físico integral.
     </p>
-    <div class="datagrid table_green">
+    <div class="mx-auto datagrid table_green">
         <table>
             <thead>
                 <tr><th>Días</th><th>Mañana</th><th>Tarde</th></tr>
@@ -26,8 +26,8 @@
                 <tr class="alt"><td>Viernes</td><td>-</td><td>-</td></tr>
         </table>
     </div>
-    <h1 class="title precio_title">Precios</h1>
-    <div class="datagrid table_violeta">
+    <h1 class="text-center title">Precios</h1>
+    <div class="mx-auto datagrid table_violeta">
         <table>
             <thead>
                 <tr><th>Asistencia:</th><th>Precios:</th</tr>
@@ -39,15 +39,21 @@
             </tbody>
         </table>
     </div>
-    <div class="block d-none d-md-block">
-        <img class="img" src="{% static "img/clases/clases_1.jpg" %}" alt="Clases">
-        <img class="img" src="{% static "img/clases/clases_2.jpg" %}" alt="Clases">
-        <img class="img" src="{% static "img/clases/clases_3.jpg" %}" alt="Clases">
+    <div class="row image-section">
+        <div class="col">
+            <img class="img-fluid rounded float-left img" src="{% static "img/clases/clases_1.jpg" %}" data-target="#myModal" data-toggle="modal">
+        </div>
+        <div class="col">
+            <img class="img-fluid rounded float-left img" src="{% static "img/clases/clases_2.jpg" %}" data-target="#myModal" data-toggle="modal">
+        </div>
+        <div class="col">
+            <img class="img-fluid rounded float-left img" src="{% static "img/clases/clases_3.jpg" %}" data-target="#myModal" data-toggle="modal">
+        </div>
     </div>
-    <div class="image-mobile-content d-flex flex-column d-md-none">
+    <!-- <div class="image-mobile-content d-flex flex-column d-md-none">
         <div class="image-mobile"><img class="img" src="{% static "img/clases/clases_1_min.jpg" %}" alt="Clases"></div>
         <div class="image-mobile"><img class="img" src="{% static "img/clases/clases_2_min.jpg" %}" alt="Clases"></div>
         <div class="image-mobile"><img class="img" src="{% static "img/clases/clases_3_min.jpg" %}" alt="Clases"></div>
-    </div>
+    </div> -->
 </div>
 {% endblock clases %}

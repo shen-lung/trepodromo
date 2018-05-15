@@ -13,7 +13,7 @@
     <script type="text/javascript" src="{% static "bootstrap4/js/bootstrap.min.js" %}"></script>
     <link rel="icon" type="image/png" href="{% static "css/img/favicon.png" %}">
 </head>
-<body>
+<body class="body-info">
     <div class="header">
         <a href="/"><section  class="container-fluid pr-0 pl-0 cover"></section></a>
         <nav class="navbar navbar-expand-md menu d-none d-md-block">
@@ -91,6 +91,19 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Image Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-none-max-width" role="document">
+        <div class="modal-content modal-image">
+          <div class="modal-body mx-auto">
+           <button type="button" class="close close-button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                <img src="" alt="" id="image" class="img-fluid">
+          </div>
+        </div>
+      </div>
     </div>
 </body>
 </html>

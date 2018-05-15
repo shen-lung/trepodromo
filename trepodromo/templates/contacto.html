@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
 {% block contacto %}
-<div class="data">
-    <h1 class="title">Contacto</h1>
-    <iframe class="block map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5250.133318756268!2d-68.8624126666208!3d-32.89336708824998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09a8ddd5489f%3A0x681aead1f1bd37da!2sMENDOZA+TENIS+CLUB!5e1!3m2!1ses!2sar!4v1509671673671" frameborder="0" allowfullscreen>
+<div class="container info-content">
+    <h1 class="text-center title">Contacto</h1>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5250.133318756268!2d-68.8624126666208!3d-32.89336708824998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09a8ddd5489f%3A0x681aead1f1bd37da!2sMENDOZA+TENIS+CLUB!5e1!3m2!1ses!2sar!4v1509671673671" frameborder="0" allowfullscreen>
     </iframe>
-    <div class="contacto_data">
-        <div class="flex-item justify-content-center">
+    <div class="row">
+        <div class="col">
             <p class="info_title d-none d-md-block"> Más información:</p>
             <p class="small_title">Dirección:</p>
             <p class="info">Av. Boulogne Sur Mer 520, Mendoza, Argentina</p>
@@ -19,12 +19,12 @@
             <p class="info">Lunes a Viernes 18 a 22 hs</p>
             <p class="info">Sábados, Domingos y feriados cerrado</p>
         </div>
-        <div class="flex-item">
+        <div class="col">
             <p class="info_title d-none d-md-block">Contactanos:</p>
             {% if is_success %}
-                <p class="email_success">{{ email_response }}</p>
+            <p class="email_success">{{ email_response }}</p>
             {% else %}
-                <p class="email_failed">{{ email_response }}</p>
+            <p class="email_failed">{{ email_response }}</p>
             {% endif %}
             <form method="post">
                 {% csrf_token %}{{ form }}
