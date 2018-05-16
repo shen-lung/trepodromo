@@ -4,6 +4,11 @@ $(document).ready(function () {
 
     productImage.click(function () {
         var productImageSource = $(this).attr('src');
+        var minImageStringPart = '_min';
+
+        if(productImageSource.includes(minImageStringPart)) {
+            productImageSource = productImageSource.replace(minImageStringPart, '');
+        }
 
         $("#image").attr('src', productImageSource);
         productOverlay.fadeIn(400);

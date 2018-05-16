@@ -417,6 +417,9 @@ li {
     text-shadow: none !important;
     outline: none !important;
 }
+.img-mobile-content {
+
+}
 @media (min-width: 200px) and (max-width: 768px) {
     .cover {
         height: 100px;
@@ -428,6 +431,15 @@ li {
     .gallery-spacing {
         margin-top: 101px;
         max-width: 100% !important;
+    }
+    .info-content {
+        margin-top: 100px;
+    }
+    .img {
+        margin-top: 2px;
+    }
+    .img-mobile-content {
+        margin-top: 14px;
     }
     /* .home-content {
         width: 100%;
