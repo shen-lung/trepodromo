@@ -14,7 +14,7 @@ $(document).ready(function () {
         productOverlay.fadeIn(400);
         $('body').css('overflow', 'hidden');
 
-        $('.close').click(function () {
+        $('.modal').click(function () {
             productOverlay.fadeOut(100);
             $('body').css('overflow', 'auto');
         });
