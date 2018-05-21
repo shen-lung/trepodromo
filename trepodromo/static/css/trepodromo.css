@@ -420,6 +420,9 @@ li {
 .img-mobile-content {
     margin-top: 14px;
 }
+.mw-50 {
+    max-width: 75% !important;
+}
 @media (min-width: 200px) and (max-width: 768px) {
     .cover {
         height: 100px;
@@ -438,5 +441,12 @@ li {
     }
     .img {
         margin-top: 2px;
+    }
+    .align-center-image-content {
+        -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
     }
 }

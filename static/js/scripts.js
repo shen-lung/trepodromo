@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var productImage = $('.img');
+    var productImage = $('img');
     var productOverlay = $('#myModal');
 
     productImage.click(function () {
@@ -10,14 +10,14 @@ $(document).ready(function () {
             productImageSource = productImageSource.replace(minImageStringPart, '');
         }
 
-        $("#image").attr('src', productImageSource);
+        $('#image').attr('src', productImageSource);
         productOverlay.fadeIn(400);
         $('body').css('overflow', 'hidden');
 
-        $('.modal').click(function () {
+        $('.modal').on('hidden.bs.modal', function (e) {
             productOverlay.fadeOut(100);
             $('body').css('overflow', 'auto');
-        });
+        })
     });
     $(document).keyup(function(e) {
         if (e.keyCode == 27) {
