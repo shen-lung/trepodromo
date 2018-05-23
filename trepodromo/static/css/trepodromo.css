@@ -453,9 +453,26 @@ li {
         margin-top: -10px;
         margin-bottom: 10px;
     }
+    /* .modal-menu {
+        right: 0;
+        bottom: -16px;
+    } */
+    .modal-dialog {
+        max-width: none !important;
+    }
 }
 @media (min-width: 200px) and (max-width: 450px) {
     .mw-75 {
         max-width: none !important;
+    }
+    .modal-menu {
+        right: 0;
+        bottom: -16px;
+    }
+}
+@media (min-width: 451px) and (max-width: 768px) {
+    .modal-menu {
+        right: 0;
+        bottom: -56px;
     }
 }
