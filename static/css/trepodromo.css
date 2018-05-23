@@ -408,10 +408,9 @@ li {
     max-width: none !important;
 }
 .close-button {
-    font-size: 36px !important;
-    margin-left: 10px;
-    margin-top: -50px;
-    margin-bottom: 10px;
+    font-size: 28px !important;
+    margin-left: 6px;
+    margin-top: -32px;
     color: #e0e0e0 !important;
     opacity: 1 !important;
     text-shadow: none !important;
@@ -420,7 +419,7 @@ li {
 .img-mobile-content {
     margin-top: 14px;
 }
-.mw-50 {
+.mw-75 {
     max-width: 75% !important;
 }
 @media (min-width: 200px) and (max-width: 768px) {
@@ -448,5 +447,15 @@ li {
         -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
         justify-content: center !important;
+    }
+    .close-button {
+        margin-left: 10px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 200px) and (max-width: 450px) {
+    .mw-75 {
+        max-width: none !important;
     }
 }
