@@ -206,7 +206,7 @@ li {
 }
 .menu-mobile {
     margin-top: 1px;
-    margin-bottom: 26px;
+    margin-bottom: 50px;
 }
 .img-link-text {
     position: absolute;
@@ -422,6 +422,67 @@ li {
 .mw-75 {
     max-width: 75% !important;
 }
+.info_title {
+    font-weight: bold;
+}
+.email_failed {
+    text-align: center;
+    color: #FF002AF0;
+}
+input[type=text], input[type=email], textarea {
+    margin-top: 8px;
+    margin-bottom: 14px;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    outline: none !important;
+    border: 1px solid #037ECfcc;
+}
+::-webkit-input-placeholder {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+input[type=submit] {
+    margin-top: 8px;
+    width: 120px;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    color: #191919;
+    background-color: #037ECf;
+}
+input[type=submit]:hover {
+    background-color: #ff6600;
+}
+input[type=submit]:focus {
+    outline: 0;#c2c2c2
+}
+.small_title {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: smaller;
+    font-weight: bold;
+}
+.info {
+    margin: 0px;
+    font-size: 16px;
+    margin: 1px;
+}
+.contacto-content {
+    margin-top: 32px;
+}
+.gallery {
+    border: 6px solid #e2e2e2;
+    border-radius: 6px;
+    box-shadow: 6px 6px 20px #c2c2c2;
+}
 @media (min-width: 200px) and (max-width: 768px) {
     .cover {
         height: 100px;
@@ -459,6 +520,11 @@ li {
     } */
     .modal-dialog {
         max-width: none !important;
+    }
+    .gallery {
+        border: none;
+        border-radius: none;
+        box-shadow: none;
     }
 }
 @media (min-width: 200px) and (max-width: 450px) {
