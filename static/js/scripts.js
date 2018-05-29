@@ -3,11 +3,16 @@ $(document).ready(function () {
     var productOverlay = $('#myModal');
 
     productImage.click(function () {
-        var productImageSource = $(this).attr('src');
-        var minImageStringPart = '_min';
-
+        var productImageSource = $(this).attr('src'),
+            minImageStringPart = '_min',
+            mobileImageStringPart = 'mobile';
+    
         if(productImageSource.includes(minImageStringPart)) {
             productImageSource = productImageSource.replace(minImageStringPart, '');
+
+            if(productImageSource.includes(mobileImageStringPart)) {
+                productImageSource = productImageSource.replace(mobileImageStringPart, 'desktop');
+            }
         }
 
         $('#image').attr('src', productImageSource);

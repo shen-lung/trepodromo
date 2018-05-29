@@ -6,12 +6,14 @@ from .base import BaseView
 class EventosView(BaseView):
 
     def get(self, request):
-        images_urls = self.get_image_urls('eventos')
+        desktop_images_urls = self.get_image_urls('eventos/desktop')
+        mobile_images_urls = self.get_image_urls('eventos/mobile')
 
         return render_to_response(
             'eventos.html',
             {
-                'images_urls': images_urls,
+                'desktop_images_urls': desktop_images_urls,
+                'mobile_images_urls': mobile_images_urls,
                 'title': 'Eventos',
             }
         )

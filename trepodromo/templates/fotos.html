@@ -5,60 +5,24 @@
     <h1 class="text-center title">Fotos</h1>
     <div class="d-flex flex-row align-center-image-content">
         <div class="d-flex flex-column">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col1/fotos_1.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col1/fotos_2.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col1/fotos_3.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col1/fotos_4.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col1/fotos_5.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col1/fotos_6.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col1/fotos_7.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col1/fotos_8.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col1/fotos_9.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col1/fotos_10.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col1/fotos_11.jpg" %}" data-target="#myModal" data-toggle="modal">
+            {% for url in col1_images_urls %}
+                <img class="img-fluid m-1 mw-100" src={{url}} data-target="#myModal" data-toggle="modal">
+            {% endfor %}
         </div>
         <div class="d-flex flex-column">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col2/fotos_1.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col2/fotos_2.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col2/fotos_3.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col2/fotos_4.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col2/fotos_5.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col2/fotos_6.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col2/fotos_7.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col2/fotos_8.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col2/fotos_9.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col2/fotos_10.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col2/fotos_11.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col2/fotos_12.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col2/fotos_13.jpg" %}" data-target="#myModal" data-toggle="modal">
+            {% for url in col2_images_urls %}
+                <img class="img-fluid m-1 mw-100" src={{url}} data-target="#myModal" data-toggle="modal">
+            {% endfor %}
         </div>
         <div class="d-flex flex-column">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col3/fotos_1.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col3/fotos_2.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col3/fotos_3.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col3/fotos_4.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col3/fotos_5.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col3/fotos_6.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col3/fotos_7.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col3/fotos_8.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col3/fotos_9.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col3/fotos_10.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col3/fotos_11.jpg" %}" data-target="#myModal" data-toggle="modal">
+            {% for url in col3_images_urls %}
+                <img class="img-fluid m-1 mw-100" src={{url}} data-target="#myModal" data-toggle="modal">
+            {% endfor %}
         </div>
         <div class="d-flex flex-column">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col4/fotos_1.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col4/fotos_2.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col4/fotos_3.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col4/fotos_4.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col4/fotos_5.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col4/fotos_6.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col4/fotos_7.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col4/fotos_8.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col4/fotos_9.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col4/fotos_10.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col4/fotos_11.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col4/fotos_12.jpg" %}" data-target="#myModal" data-toggle="modal">
-            <img class="img-fluid m-1 mw-100" src="{% static "img/fotos/col4/fotos_13.jpg" %}" data-target="#myModal" data-toggle="modal">
+            {% for url in col4_images_urls %}
+                <img class="img-fluid m-1 mw-100" src={{url}} data-target="#myModal" data-toggle="modal">
+            {% endfor %}
         </div>
     </div>
 </div>

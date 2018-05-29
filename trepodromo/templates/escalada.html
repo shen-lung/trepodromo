@@ -35,33 +35,21 @@
     </div>
     <div class="image-section d-none d-md-block">
         <div class="row">
-            <div class="col">
-                <img class="img-fluid rounded float-left img" src="{% static "img/escalada/escalada_1.jpg" %}" data-target="#myModal" data-toggle="modal">
-            </div>
-            <div class="col">
-                <img class="img-fluid rounded float-left img" src="{% static "img/escalada/escalada_2.jpg" %}" data-target="#myModal" data-toggle="modal">
-            </div>
-            <div class="col">
-                <img class="img-fluid rounded float-left img" src="{% static "img/escalada/escalada_3.jpg" %}" data-target="#myModal" data-toggle="modal">
-            </div>
+            {% for url in desktop_images_urls %}
+                <div class="col">
+                    <img class="img-fluid rounded float-left img" src={{ url }} data-target="#myModal" data-toggle="modal">
+                </div>
+            {% endfor %}
         </div>
     </div>
     <div class="img-mobile-content d-md-none">
-        <div class="row">
-            <div class="col">
-                <img class="img-fluid rounded float-left img w-100" src="{% static "img/escalada/escalada_1_min.jpg" %}" data-target="#myModal" data-toggle="modal">
+        {% for url in mobile_images_urls %}
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid rounded float-left img w-100" src={{ url }} data-target="#myModal" data-toggle="modal">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <img class="img-fluid rounded float-left img w-100" src="{% static "img/escalada/escalada_2_min.jpg" %}" data-target="#myModal" data-toggle="modal">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <img class="img-fluid rounded float-left img w-100" src="{% static "img/escalada/escalada_3_min.jpg" %}" data-target="#myModal" data-toggle="modal">
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock escalada %}

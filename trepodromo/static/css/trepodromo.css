@@ -483,6 +483,9 @@ input[type=submit]:focus {
     border-radius: 6px;
     box-shadow: 6px 6px 20px #c2c2c2;
 }
+.second-title {
+    margin-top: 60px;
+}
 @media (min-width: 200px) and (max-width: 768px) {
     .cover {
         height: 100px;
@@ -525,6 +528,9 @@ input[type=submit]:focus {
         border: none;
         border-radius: none;
         box-shadow: none;
+    }
+    .second-title{
+        margin-top: 0;
     }
 }
 @media (min-width: 200px) and (max-width: 450px) {
