@@ -26,9 +26,6 @@ SECRET_KEY = '1$v-2(4s=g!$6crq4*#cv$w(o19elb&-qr^kixx#luyh9hx@^j'
 DEBUG = TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = [
-    '0.0.0.0',
-    '192.168.1.105',
-    '192.168.1.104',
     '127.0.0.1',
     'localhost',
     'www.trepodromo.com',

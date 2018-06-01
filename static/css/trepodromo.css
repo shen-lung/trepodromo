@@ -538,7 +538,7 @@ input[type=submit]:focus {
         max-width: none !important;
     }
     .modal-menu {
-        right: 0;
+        right: -8px;
         bottom: -16px;
     }
 }

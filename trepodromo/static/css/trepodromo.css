@@ -517,10 +517,6 @@ input[type=submit]:focus {
         margin-top: -10px;
         margin-bottom: 10px;
     }
-    /* .modal-menu {
-        right: 0;
-        bottom: -16px;
-    } */
     .modal-dialog {
         max-width: none !important;
     }
@@ -538,7 +534,7 @@ input[type=submit]:focus {
         max-width: none !important;
     }
     .modal-menu {
-        right: 0;
+        right: -8px;
         bottom: -16px;
     }
 }
