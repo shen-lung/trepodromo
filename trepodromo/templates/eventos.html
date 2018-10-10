@@ -6,6 +6,13 @@
     <p class="mx-auto">Frente al entusiasmo por escalar y con el fin de estrechar lazos entre escaladores y fomentar el deporte, realizamos diferentes eventos a lo largo del año abiertos a todo público. Dichos eventos cuentan con diferentes propuestas de boulders, actividades recreativas, música y sorteos.
     </p>
     <div class="image-section d-none d-md-block">
+        <div class="row image-event-block">
+            {% for url in events_images_urls %}
+                <div class="col">
+                    <img class="img-fluid rounded float-left img" src={{url}} data-target="#myModal" data-toggle="modal">
+                </div>
+            {% endfor %}
+        </div>
         <div class="row">
             {% for url in desktop_images_urls %}
                 <div class="col">
@@ -15,6 +22,15 @@
         </div>
     </div>
     <div class="img-mobile-content d-md-none">
+        <div class="image-event-block">
+            {% for url in events_images_urls %}
+                <div class="row">
+                    <div class="col">
+                        <img class="img-fluid rounded float-left img w-100" src={{url}} data-target="#myModal" data-toggle="modal">
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
         {% for url in mobile_images_urls %}
             <div class="row">
                 <div class="col">
