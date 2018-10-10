@@ -550,3 +550,8 @@ input[type=submit]:focus {
         bottom: -56px;
     }
 }
+@media (min-width: 1200px) {
+    .gallery-spacing {
+        max-width: 1016px !important;
+    }
+}
