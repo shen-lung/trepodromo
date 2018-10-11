@@ -10,19 +10,6 @@
     background: url("img/confectionary.png") repeat;
     color: var(--text-color);
 }
-/* p label {
-    font-size: 15px;
-}
-.content {
-    width: 950px;
-    position: relative;
-    margin: 0 auto;
-}
-.home-content  {
-    width: 950px;
-    position: relative;
-    margin: 0 auto;
-} */
 .header {
     overflow: hidden;
     position: fixed;
@@ -50,15 +37,6 @@
     text-decoration: none;
     color: var(--text-color);
 }
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-li {
-    float: left;
-} */
 .menu-link {
     color: var(--text-color);
     font-family: 'Chewy', serif;
@@ -98,10 +76,6 @@ li {
 .menu-link-color {
     color: var(--text-color);
 }
-/* .center {
-    margin: 0 auto;
-    width: 1000px;
-} */
 .menu {
     background-color: var(--section-color);
 }
